@@ -424,3 +424,41 @@ body {
     width: 100%;
   }
 }
+
+#marc-dun-link {
+  color: rgb(99, 99, 255); /* Color del enlace */
+  text-decoration: underline; /* Subrayado */
+  cursor: pointer; /* Cambia el cursor a una mano apuntando */
+}
+
+#marc-dun-link:hover {
+  color: rgb(182, 182, 255); /* Color del enlace al pasar el ratón por encima */
+}
+
+#lunes-content h1 {
+  font-size: 18px; /* Ajusta el tamaño de la fuente a lo que prefieras */
+}
+
+#martes-content h1 {
+  font-size: 18px; /* Ajusta el tamaño de la fuente a lo que prefieras */
+}
+
+#miercoles-content h1 {
+  font-size: 18px; /* Ajusta el tamaño de la fuente a lo que prefieras */
+}
+
+#jueves-content h1 {
+  font-size: 18px; /* Ajusta el tamaño de la fuente a lo que prefieras */
+}
+
+#viernes-content h1 {
+  font-size: 18px; /* Ajusta el tamaño de la fuente a lo que prefieras */
+}
+
+#sabado-content h1 {
+  font-size: 18px; /* Ajusta el tamaño de la fuente a lo que prefieras */
+}
+
+#domingo-content h1 {
+  font-size: 18px; /* Ajusta el tamaño de la fuente a lo que prefieras */
+}
