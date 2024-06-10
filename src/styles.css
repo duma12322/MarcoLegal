@@ -1,0 +1,409 @@
+body {
+  font-family: 'Darker Grotesque', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Ajusta según sea necesario */
+  background-color: #333; /* Cambia al color de fondo deseado */
+  color: white; /* Cambia al color de texto deseado */
+}
+
+.logo img {
+  width: 100px; /* Ajusta según sea necesario */
+  height: auto; /* Ajusta según sea necesario */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px; /* Ajusta según sea necesario */
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  color: white; /* Cambia al color de texto deseado */
+  text-decoration: none;
+  font-size: 20px; /* Cambia al tamaño de fuente deseado */
+}
+
+main {
+  padding: 20px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+section {
+  margin: 20px 0;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.footer-left {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 60px;
+  margin-top: 40px;
+}
+
+.tagline {
+  margin-top: 60px;
+  margin-left: -60px; /* Adjust the margin to control spacing between the logo and the text */
+}
+
+.audio-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.audio-wrapper {
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.cover-image {
+  max-width: 80%;
+  height: auto;
+  object-fit: cover;
+  margin: 0 auto 50px; /* Centra horizontalmente y agrega margen inferior */
+  display: block; /* Asegura que la imagen sea un bloque */
+}
+
+.progress-bar-wrapper {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #4caf50;
+  border-radius: 5px;
+  width: 10%; /* Ajustar según el progreso */
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+}
+
+.volume-control {
+  margin-left: 10px;
+}
+
+.volume-slider {
+  width: 100px;
+  margin-right: 5px;
+}
+
+#play-btn {
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #333;
+  margin-right: 20px;
+}
+
+#mute-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Ajusta el espacio entre el logo y el reproductor */
+}
+
+.logo-image {
+  width: 50px; /* Ajusta el tamaño del logo según sea necesario */
+  height: 50px; /* Ajusta el tamaño del logo según sea necesario */
+  margin-right: 10px; /* Ajusta el espacio entre el logo y el nombre de la radio */
+}
+
+.radio-name {
+  font-size: 18px; /* Ajusta el tamaño del nombre de la radio según sea necesario */
+}
+
+.logo1-image {
+  width: 50px; /* Tamaño del logo */
+  height: 50px; /* Tamaño del logo  */
+  border-radius: 30%;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icon {
+  margin: 0 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.custom-icon {
+  width: 24px; /* Ajusta el tamaño según sea necesario */
+  height: 24px; /* Ajusta el tamaño según sea necesario */
+}
+
+/* Contact Section */
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: flex-start; /* Alinea el contenido hacia la izquierda */
+  align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 20px; /* Añadir padding para separación */
+}
+
+.map-container {
+  display: flex;
+  justify-content: flex-start; /* Alinea el contenido hacia la izquierda */
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 10px; /* Pequeño padding alrededor del mapa */
+}
+
+.map-container iframe {
+  max-width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+@media (min-width: 768px) {
+  .contact-content {
+    flex-direction: row;
+  }
+}
+
+.contact-info {
+  width: 50%;
+  margin-top: 20px;
+}
+
+.contact-info img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  margin-left: -60px;
+}
+
+.contact-info div {
+  margin-bottom: 20px;
+}
+
+.extra-image {
+  display: block;
+  margin-top: 300px; /* Ajusta el margen superior */
+  margin-left: -500px; /* Ajusta el margen izquierdo */
+  width: 400px;
+  height: auto;
+}
+
+.galeria-image {
+  width: 200px; /* Ancho más pequeño */
+  height: auto;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+}
+
+.card {
+  width: 30%; /* Ajusta el ancho de las tarjetas */
+}
+
+.galeria-image {
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start; /* Alinear elementos al inicio */
+}
+
+.text {
+  flex: 1;
+  margin-right: 30px; /* Espacio entre el texto y la imagen */
+}
+
+.image-below img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 70px;
+  margin-right: 10px;
+}
+
+.image-below2 {
+  margin-right: 30px;
+  margin-top: 15px;
+}
+
+body {
+  font-family: 'Darker Grotesque', sans-serif;
+  font-family: 'Poiret One', cursive;
+}
+
+.accordion {
+  width: 80%;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-header {
+  background-color: #f1f1f1;
+  cursor: pointer;
+  padding: 15px;
+  text-align: left;
+}
+
+.accordion-content {
+  display: none;
+  padding: 15px;
+  background-color: white;
+}
+
+.accordion-content h1 {
+  margin: 5px 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .tagline {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    width: 100%;
+  }
+
+  .extra-image {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .accordion {
+    width: 100%;
+  }
+}

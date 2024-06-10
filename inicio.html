@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Radio Minuto 106.1 FM</title>
+    <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque|Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/img/img2.png" alt="Logo" class="logo1-image">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="programacion.html">Programación</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="index">
+            <h1>Bienvenidos a Radio Minuto 106.1 FM</h1>
+            <img src="assets/img/rm.png" alt="Imagen de bienvenida" class="cover-image">
+            <h1>"Si lo dice Radio Minuto, es cierto"</h1>
+            <div class="audio-player">
+                <div class="logo-wrapper">
+                    <img src="assets/img/logo.png" alt="Logo" class="logo-image"> <!-- Logo aquí -->
+                    <div class="radio-name">Radio Minuto 106.1 FM</div>
+                </div>
+                <div class="audio-wrapper">
+                    <div class="progress-bar-wrapper">
+                        <div class="progress-bar" id="progress-bar"></div>
+                    </div>
+                    <audio id="player" preload="metadata">
+                        <source src="https://radios.yanapak.org/test1" type="audio/mp3">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+                <div class="player-controls">
+                    <button id="play-btn" class="fa fa-play"></button>
+                    <div class="volume-control">
+                        <button id="mute-btn" class="fa fa-volume-up"></button>
+                        <input type="range" min="0" max="1" step="0.01" value="1" class="volume-slider">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <img src="assets/img/logo.png" alt="Logo" class="logo1-image">
+                <p class="tagline">La Barquisimetana</p>
+            </div>
+            <div class="footer-center">
+                <p>SÍGUENOS</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/login/" target="_blank" class="social-icon">
+                        <img src="assets/icons/fb.ico" alt="Facebook" class="custom-icon">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                        <img src="assets/icons/ins.ico" alt="Instagram" class="custom-icon">
+                    </a>
+                    <a href="https://x.com/" target="_blank" class="social-icon">
+                        <img src="assets/icons/X.ico" alt="X" class="custom-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2024 Radio Minuto 106.1 FM. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="src/script.js"></script>
+</body>
+
+</html>
