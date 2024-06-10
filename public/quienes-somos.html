@@ -27,10 +27,11 @@
     </header>
     <main>
         <section id="quienes-somos">
+            <h2>Quienes Somos</h2>
             <div class="content">
                 <div class="container">
                     <div class="text">
-                        <h2>Quienes Somos</h2>
+
                         <p>La Cadena Minuto, la integran Radio Minuto 790 AM, La Barquisimetana Minuto 106.1 FM (en
                             Barquisimeto) y Minuto 103.9 FM
                             (en Acarigua), la principal fortaleza de esta cadena es la diversidad de opciones que
@@ -118,8 +119,15 @@
             </div>
         </div>
         <p>&copy; 2024 Radio Minuto 106.1 FM. Todos los derechos reservados.</p>
+        <p>Desarrollado por <a href="#" id="marc-dun-link">Marc'Dun</a></p>
     </footer>
     <script src="src/script.js"></script>
+    <script>
+        document.getElementById('marc-dun-link').addEventListener('click', function (event) {
+            event.preventDefault();
+            alert('Contacto: 04120515005');
+        });
+    </script>
 </body>
 
 </html>
