@@ -101,6 +101,16 @@ footer {
   object-fit: cover;
   margin: 0 auto 50px; /* Centra horizontalmente y agrega margen inferior */
   display: block; /* Asegura que la imagen sea un bloque */
+  animation: scaleIn 1s ease-out forwards;
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0.9);
+  }
 }
 
 .progress-bar-wrapper {
@@ -262,6 +272,7 @@ footer {
 
 .card {
   width: 30%; /* Ajusta el ancho de las tarjetas */
+  animation: scaleIn 1s ease-out forwards;
 }
 
 .galeria-image {
@@ -294,11 +305,17 @@ footer {
 .container {
   display: flex;
   align-items: flex-start; /* Alinear elementos al inicio */
+  animation: scaleIn 1s ease-out forwards;
 }
 
 .text {
   flex: 1;
   margin-right: 30px; /* Espacio entre el texto y la imagen */
+  color: #000000; /* Cambiar el color del texto a negro */
+  font-weight: 600; /* Hacer que el texto sea un poco más grueso */
+  padding: 10px; /* Agregar relleno para separar el texto del borde */
+  border-radius: 10px; /* Hacer los bordes redondeados */
+  box-shadow: 0px 5px 8px rgba(3, 3, 3, 0.1); /* Agregar una sombra para simular un borde transparente */
 }
 
 .image-below img {
