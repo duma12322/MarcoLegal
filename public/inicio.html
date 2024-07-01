@@ -36,20 +36,10 @@
                     <div class="radio-name">Radio Minuto 106.1 FM</div>
                 </div>
                 <div class="audio-wrapper">
-                    <div class="progress-bar-wrapper">
-                        <div class="progress-bar" id="progress-bar"></div>
-                    </div>
-                    <audio id="player" preload="metadata">
-                        <source src="https://radios.yanapak.org/test1" type="audio/mp3">
+                    <audio id="player" controls preload="metadata">
+                        <source src="https://guri.tepuyserver.net:7057/;stream.mp3" type="audio/mp3">
                         Tu navegador no soporta el elemento de audio.
                     </audio>
-                </div>
-                <div class="player-controls">
-                    <button id="play-btn" class="fa fa-play"></button>
-                    <div class="volume-control">
-                        <button id="mute-btn" class="fa fa-volume-up"></button>
-                        <input type="range" min="0" max="1" step="0.01" value="1" class="volume-slider">
-                    </div>
                 </div>
             </div>
         </section>
@@ -83,6 +73,35 @@
         document.getElementById('marc-dun-link').addEventListener('click', function (event) {
             event.preventDefault();
             alert('Contacto: 04120515005');
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const playBtn = document.getElementById('play-btn');
+            const muteBtn = document.getElementById('mute-btn');
+            const volumeSlider = document.querySelector('.volume-slider');
+            const player = document.getElementById('player');
+
+            playBtn.addEventListener('click', function () {
+                if (player.paused) {
+                    player.play();
+                    playBtn.classList.remove('fa-play');
+                    playBtn.classList.add('fa-pause');
+                } else {
+                    player.pause();
+                    playBtn.classList.remove('fa-pause');
+                    playBtn.classList.add('fa-play');
+                }
+            });
+
+            muteBtn.addEventListener('click', function () {
+                player.muted = !player.muted;
+                muteBtn.classList.toggle('fa-volume-up');
+                muteBtn.classList.toggle('fa-volume-off');
+            });
+
+            volumeSlider.addEventListener('input', function () {
+                player.volume = volumeSlider.value;
+            });
         });
     </script>
 </body>
